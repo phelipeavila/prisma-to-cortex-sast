@@ -1,0 +1,26 @@
+# --- Secrets ----------------------------------------------------------------
+# Settings with Prisma Cloud and Cortex credentials (see README.md).
+.env
+*.env
+!.env.example
+
+# --- Customer data ----------------------------------------------------------
+# Generated output: raw Prisma findings, SARIF files, summaries.
+output/
+# Manual Prisma -> Cortex repository mapping (customer repository names/ids).
+repo_map.csv
+# Findings exported from the Prisma Cloud console.
+csvReport_*.csv
+*.sarif
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Local tooling / OS -----------------------------------------------------
+.claude/settings.local.json
+.vscode/
+.idea/
+.DS_Store
